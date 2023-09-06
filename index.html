@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="utils/logo.png" />
+    <title>A-Z Fellas</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="logo">
+        <img src="utils/logo.png" alt="" />
+        <h3>A-Z Fellas</h3>
+      </div>
+    </header>
+    <section class="hero-image-container">
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>Experience Spotless Cleanliness</h1>
+          <p>
+            Get your space sparkling clean with our professional cleaning services. Reliable,
+            efficient, and tailored to your needs.
+          </p>
+          <a href="#contact-us">Contact Us</a>
+        </div>
+      </div>
+    </section>
+    <section class="about-us-container">
+      <h2 class="about-us-header">About Us</h2>
+      <p class="about-us-paragraph">
+        At A-Z Fellas, we are a trusted cleaning company based in Utrecht, Netherlands. With our
+        commitment to excellence and attention to detail, we provide top-notch cleaning services for
+        both residential and commercial properties. Our team of experienced professionals is
+        dedicated to delivering exceptional results, ensuring that every space we clean is left
+        spotless and sparkling. Whether you need regular maintenance cleaning or a one-time deep
+        clean, you can rely on us to meet your cleaning needs with efficiency and professionalism.
+      </p>
+    </section>
+
+    <!-- Services -->
+    <section class="service-container">
+      <h1 class="service-header">Our Services</h1>
+      <div class="service-list-container">
+        <div class="items-container">
+          <div class="item-image-container">
+            <img src="./utils/deep-cleaning.jpeg" alt="deep-cleaning" class="item-image" />
+          </div>
+          <h2 class="item-header">Deep Cleaning</h2>
+          <p class="list-paragraph">
+            Thoroughly clean and sanitize every inch of your space, providing a fresh and hygienic
+            environment.
+          </p>
+        </div>
+        <div class="items-container">
+          <div class="item-image-container">
+            <img
+              src="./utils/regular-maintenance.jpeg"
+              alt="regular-maintenance"
+              class="item-image"
+            />
+          </div>
+          <h2 class="item-header">Regular Maintenance</h2>
+          <p class="list-paragraph">
+            Ensure the cleanliness and tidiness of your space on a consistent basis, keeping it
+            organized and presentable.
+          </p>
+        </div>
+        <div class="items-container">
+          <div class="item-image-container">
+            <img src="./utils/garden-maintaince.jpg" alt="garden-maintenance" class="item-image" />
+          </div>
+          <h2 class="item-header">Garden maintenance</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <div class="review-container">
+      <div class="review-carousel">
+        <div class="review-slider">
+          <section class="review-item-container">
+            <div class="review-item-container">
+              <h3>
+                A-Z Fellas is the best cleaning company in Utrecht! They provide exceptional
+                service, leaving my home spotless every time. I am grateful for their attention to
+                detail, professionalism, and friendly staff. Thank you, A-Z Fellas, for making my
+                life easier!
+              </h3>
+              <p>Emma</p>
+            </div>
+          </section>
+          <section>
+            <div class="review-item-container">
+              <h3>
+                A-Z Fellas is the best cleaning company in Utrecht! They provide exceptional
+                service, leaving my home spotless every time. I am grateful for their attention to
+                detail, professionalism, and friendly staff. Thank you, A-Z Fellas, for making my
+                life easier!
+              </h3>
+              <p>Sophie</p>
+            </div>
+          </section>
+          <section>
+            <div class="review-item-container">
+              <h3>
+                A-Z Fellas did a fantastic job cleaning my home! Their attention to detail and
+                professionalism exceeded my expectations. I am extremely grateful for their
+                excellent service and would highly recommend them to anyone in need of a reliable
+                and trustworthy cleaning company. Thank you!
+              </h3>
+              <p>Emma1</p>
+            </div>
+          </section>
+        </div>
+        <div class="review-controls">
+          <span class="review-arrow review-left"><</span>
+          <span class="review-arrow review-right">></span>
+          <ul>
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pictures -->
+    <section class="pictures">
+      <h1>Pictures</h1>
+      <div class="pictures-container">
+        <div class="wide">
+          <img src="utils/gallary/image1.jpeg" alt="" />
+        </div>
+        <div class="wide">
+          <img src="utils/gallary/image2.jpeg" alt="" />
+        </div>
+        <div class="wide">
+          <img src="utils/gallary/image3.jpeg" alt="" />
+        </div>
+        <div class="big">
+          <img src="utils/gallary/image4.jpeg" alt="" />
+        </div>
+        <div class="big">
+          <img src="utils/gallary/image5.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact us -->
+    <section class="contact-us-section" id="contact-us">
+      <div class="contact-us-container">
+        <div class="contact-us-info">
+          <h3>Contact Us Today</h3>
+          <p>
+            Fill out the form to get in touch with our cleaning company. We are here to answer any
+            questions you may have and provide you with the best cleaning services.
+          </p>
+          <a class="whatsapp-button" href="https://wa.me/31694521517" target="_blank"
+            ><i class="fa fa-whatsapp whatsapp-icon"></i>Chat On Whatsapp</a
+          >
+        </div>
+        <div class="contact-us-form">
+          <form onsubmit="sendEmail(event)" id="contact-form">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name.." required />
+            </div>
+
+            <div>
+              <label for="email">email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div>
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter phone number.."
+                required
+              />
+            </div>
+
+            <div>
+              <label for="service">Service</label>
+              <select id="service" name="service" required>
+                <option value="Deep cleaning">Deep cleaning</option>
+                <option value="End of tenancy">End of tenancy</option>
+                <option value="Airbnb cleaning">Airbnb cleaning</option>
+                <option value="Moving out Moving in">Moving out Moving in</option>
+                <option value="Office Cleaning">Office Cleaning</option>
+                <option value="Apartment weekly cleaning">Apartment weekly cleaning</option>
+                <option value="Apartment monthly cleaning">Apartment monthly cleaning</option>
+                <option value="One time deep cleaning">One time deep cleaning</option>
+                <option value="Restaurant cleaning">Restaurant cleaning</option>
+                <option value="Office Cleaning">Office Cleaning</option>
+                <option value="Park cleaning">Park cleaning</option>
+                <option value="Windows cleaning">Windows cleaning</option>
+                <option value="Store cleaning">Store cleaning</option>
+                <option value="Carpet cleaning">Carpet cleaning</option>
+                <option value="Hotel cleaning">Hotel cleaning</option>
+                <option value="Bi-weekly cleaning">Bi-weekly cleaning</option>
+              </select>
+            </div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message.." required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+          <p class="message-info">
+            Email sent successfully, we will contact you as soon as possible
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="prices-container">
+      <div class="prices"></div>
+    </section>
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="utils/logo.png" alt="" />
+        <h1>A-Z Fellas</h1>
+      </div>
+      <div class="footer-info">
+        <div>
+          <h4>
+            Location:
+            <span>Utrecht, Netherlands</span>
+          </h4>
+        </div>
+        <div>
+          <h4>
+            KVK:
+            <span>84691638</span>
+          </h4>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>

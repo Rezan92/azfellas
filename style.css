@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&family=Merriweather:wght@200;300;400;700&display=swap');
+
+:root {
+    --main-bg-color: #f90;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+.header-container {
+    background: var(--main-bg-color);
+    margin: 0;
+    padding: 1rem 2rem;
+    box-shadow: 0px -2px 7px #706e6e;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.logo img {
+    width: 3rem;
+}
+
+.hero-image {
+    background: url('./utils/heroImage.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 480px;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.hero-image::before {
+    content: '';
+    background-color: rgba(255, 255, 255, 0.329);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-image-container {
+    padding: 1rem 0 0;
+    background: var(--main-bg-color);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
+    color: rgb(0, 0, 0);
+}
+
+.hero-text h1, .hero-text p {
+    width: 70%;
+    min-width: 558px;
+}
+
+.hero-text p {
+    font-weight: 300;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+}
+
+.hero-text a {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background: #ff990094;
+    border: 2px solid #3c4f55;
+    border-radius: 1rem;
+    outline: none;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.hero-text a:hover {
+    background: #ff9900;
+}
+
+.about-us-container {
+    background-color: #ffcb32;
+    padding: 2rem 1rem;
+}
+
+.about-us-header {
+    margin: 3rem 0 1rem;
+}
+
+.about-us-paragraph {
+    margin: 1rem 0;
+    width: 70%;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.service-header {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 3rem 0 2rem;
+}
+
+.service-container {
+    padding: 1.5rem;
+}
+
+.item-header {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1.5rem 0;
+}
+
+.list-paragraph {
+    font-weight: 300;
+    margin: 1.5rem 0;
+    color: #5f5f5f;
+    line-height: 1.6rem;
+}
+
+.item-image-container {
+    width: 100%;
+    height: 290px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.item-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.service-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.items-container {
+    width: calc(32% - 10px);
+}
+
+@media screen and (max-width: 768px) {
+    .items-container {
+        width: calc(50% - 10px);
+    }
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 480px) {
+    .service-list-container {
+        flex-direction: column;
+    }
+
+    .items-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.review-container {
+    margin: 10px auto;
+    background: #ffcb32;
+}
+
+.review-carousel {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.review-slider {
+    height: 100%;
+    display: flex;
+    transition: all .2s;
+}
+
+.review-slider section {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-item-container {
+    width: 70%;
+    font-weight: 300;
+    text-align: center;
+}
+
+.review-item-container h3 {
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.review-item-container p {
+    font-size: 1.3rem;
+}
+
+.review-controls .review-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 2.2rem;
+    font-weight: 400;
+    cursor: pointer;
+    transform: translate(0, -50%)
+}
+
+.review-left {
+    left: 5%;
+}
+
+.review-right {
+    right: 5%;
+}
+
+.review-controls ul {
+    position: absolute;
+}
+
+.review-controls ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+}
+
+.review-controls ul li {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #333;
+    border-radius: 50px;
+    margin: 1rem;
+    background: #8f8f8f;
+    cursor: pointer;
+}
+
+.review-controls ul li.selected {
+    background: black;
+}
+
+.pictures {
+    padding: 2rem;
+}
+
+.pictures h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
+.pictures-container {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 300px;
+    grid-auto-flow: dense;
+    justify-content: space-between;
+}
+
+.pictures-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pictures-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.pictures-container .wide {
+    grid-column: span 4;
+    grid-row: span 1;
+}
+
+.pictures-container .big {
+    grid-column: span 6;
+    grid-row: span 1;
+}
+
+.contact-us-form input[type=text],
+.contact-us-form input[type=email],
+.contact-us-form input[type=tel],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.contact-us-form button {
+    background-color: #7a7a7a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-us-form button:hover {
+    background-color: #565656;
+}
+
+.contact-us-form {
+    border-radius: 5px;
+    padding: 20px;
+    width: 70%;
+}
+
+.form-fields {
+    display: flex;
+    gap: 5%;
+}
+
+.contact-us-section {
+    background: #ffcb32;
+    padding: 2rem;
+}
+
+.contact-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-info h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.contact-us-info p {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.footer {
+    background: #cc0000;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4rem;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.footer-logo img {
+    width: 4rem;
+}
+
+.footer h4 {
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+.footer span {
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.footer-info {
+    margin-right: 10rem;
+}
+
+.message-info {
+    background-color: #19c019;
+    margin-top: .5rem;
+    padding: 0 .7rem;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.visible {
+    height: auto;
+    padding: .7rem;
+}
+
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-radius: 15px;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: #25d366;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.whatsapp-icon {
+    font-size: 2rem;
+    margin-right: .4rem;
+}
+
+.prices-container {
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.prices {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2%;
+}
+
+.price-item {
+    width: 29vw;
+    margin: 2rem 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.price-item img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: all .3s;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.price-item:hover img {
+    transform: scale(1.2);
+}
+
+.price-item h4,
+.price-item h3,
+.price-item span,
+.price-item p {
+    position: absolute;
+    z-index: 100;
+}
+
+.price-item h4 {
+    background: #1484f4;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 100px;
+    top: 2rem;
+    right: 2rem;
+}
+
+.price-item h3 {
+    background-color: white;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 1rem;
+    text-align: center;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.price-item span {
+    display: block;
+    color: #1484f4;
+    bottom: 0rem;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    z-index: 200;
+    transition: opacity .3s;
+    cursor: pointer;
+}
+
+.price-item:hover h3 {
+    padding-bottom: 2rem;
+}
+
+.price-item:hover span {
+    opacity: 1;
+}
+
+.price-item p {
+    background: #f90;
+    height: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 300;
+    text-align: center;
+    padding: 0 1rem;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 700px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text h1, .hero-text p {
+        width: 100%;
+        min-width: 300px;
+    }
+
+    .service-list-container {
+        flex-direction: column;
+    }
+
+    .items-container {
+        width: 100%;
+    }
+
+    .review-item-container h3 {
+        font-size: 1.3rem;
+    }
+
+    .review-item-container p {
+        font-size: 1.1rem;
+    }
+
+    .contact-us-container {
+        flex-direction: column;
+    }
+    .contact-us-form {
+        width: 100%;
+        margin-top: 2rem;
+        padding: 0;
+    }
+    .whatsapp-button {
+        font-size: 1rem;
+    }
+    .whatsapp-icon {
+        font-size: 1.3rem;
+    }
+    .pictures-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prices {
+        flex-direction: column;
+    }
+
+    .price-item {
+        width: 100%;
+    }
+}
