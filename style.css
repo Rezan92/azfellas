@@ -35,8 +35,10 @@ h1, h2, h3 {
     justify-content: left;
     align-items: center;
 }
+
 .logo img {
-    width: 3rem;
+    width: 6rem;
+    margin: 0 1rem;
 }
 
 .hero-image {
@@ -358,8 +360,10 @@ select {
     justify-content: left;
     align-items: center;
 }
+
 .footer-logo img {
-    width: 4rem;
+    width: 8rem;
+    margin: 0 1rem;
 }
 
 .footer h4 {
@@ -508,60 +512,76 @@ select {
 }
 
 /* Media query for small screens */
-@media screen and (max-width: 700px) {
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-
-    .hero-text h1, .hero-text p {
-        width: 100%;
-        min-width: 300px;
-    }
-
-    .service-list-container {
-        flex-direction: column;
-    }
-
-    .items-container {
-        width: 100%;
-    }
-
-    .review-item-container h3 {
-        font-size: 1.3rem;
-    }
-
-    .review-item-container p {
-        font-size: 1.1rem;
-    }
-
-    .contact-us-container {
-        flex-direction: column;
-    }
-    .contact-us-form {
-        width: 100%;
-        margin-top: 2rem;
-        padding: 0;
-    }
-    .whatsapp-button {
-        font-size: 1rem;
-    }
-    .whatsapp-icon {
-        font-size: 1.3rem;
-    }
-    .pictures-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .services {
-        flex-direction: column;
-    }
-
-    .service-item {
-        width: 100%;
-    }
-
+@media screen and (max-width: 1260px) {
     .service-item p {
-        line-height: 1.3rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
+
     }
-}
+
+    @media screen and (max-width: 1090px) {
+        .service-item p {
+            font-size: .9rem;
+        }
+
+        @media screen and (max-width: 700px) {
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .hero-text h1, .hero-text p {
+                width: 100%;
+                min-width: 300px;
+            }
+
+            .service-list-container {
+                flex-direction: column;
+            }
+
+            .items-container {
+                width: 100%;
+            }
+
+            .review-item-container h3 {
+                font-size: 1.3rem;
+            }
+
+            .review-item-container p {
+                font-size: 1.1rem;
+            }
+
+            .contact-us-container {
+                flex-direction: column;
+            }
+
+            .contact-us-form {
+                width: 100%;
+                margin-top: 2rem;
+                padding: 0;
+            }
+
+            .whatsapp-button {
+                font-size: 1rem;
+            }
+
+            .whatsapp-icon {
+                font-size: 1.3rem;
+            }
+
+            .pictures-container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .services {
+                flex-direction: column;
+            }
+
+            .service-item {
+                width: 100%;
+            }
+
+            .service-item p {
+                line-height: 1.3rem;
+            }
+        }

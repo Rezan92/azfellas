@@ -85,7 +85,7 @@ const services = [
   },
   {
     price: '$200-$1000',
-    imagePath: 'utils/gallary/image2.jpeg',
+    imagePath: 'utils/gallary/domestic-cleaning.jpg',
     title: 'Domestic cleaning',
     info: `A-Z Fellas cleaning services has an experienced team of cleaners to provide high-quality
     services for your residence and living spaces. We aim to maintain a clean and
@@ -95,7 +95,7 @@ const services = [
   },
   {
     price: '$200-$1000',
-    imagePath: 'utils/gallary/image3.jpeg',
+    imagePath: 'utils/gallary/move-cleaning.jpg',
     title: 'Move In/Out Cleaning',
     info: `Moving into a new home is an exciting experience, but it can also be a stressful one.
     From packing and unpacking to cleaning and organizing, there’s a lot to do before you
@@ -113,7 +113,7 @@ const services = [
   },
   {
     price: '$200-$1000',
-    imagePath: 'utils/gallary/image5.jpeg',
+    imagePath: 'utils/gallary/mold-removing.jpg',
     title: 'Mold removing',
     info: `Our team of experienced professionals specializes in safely identifying the leads to the
     mold and then isolating these affected areas, then move on to remove the mold clean
@@ -123,7 +123,7 @@ const services = [
   },
   {
     price: '$200-$1000',
-    imagePath: 'utils/gallary/image5.jpeg',
+    imagePath: 'utils/gallary/garden-maintenance.jpg',
     title: 'Garden maintenance',
     info: `Garden maintenance is essential to ensure that outdoor spaces remain beautiful and
     functional throughout the year. Our team of expertise will take care and upkeep of your
