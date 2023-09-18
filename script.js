@@ -10,7 +10,7 @@ const serviceInput = document.querySelector('#service');
 const messageInput = document.querySelector('#message');
 const contactForm = document.querySelector('#contact-form');
 const messageInfo = document.querySelector('.message-info');
-const pricesList = document.querySelector('.prices');
+const servicesList = document.querySelector('.services');
 let sectionIndex = 0;
 
 const setIndex = (sectionIndex) => {
@@ -86,7 +86,7 @@ const services = [
   {
     price: '$200-$1000',
     imagePath: 'utils/gallary/image2.jpeg',
-    title: 'Doumistic cleaning',
+    title: 'Domestic cleaning',
     info: `A-Z Fellas cleaning services has an experienced team of cleaners to provide high-quality
     services for your residence and living spaces. We aim to maintain a clean and
     comfortable environment for you and your family, covering tasks like house cleaning,
@@ -105,7 +105,7 @@ const services = [
   {
     price: '$200-$1000',
     imagePath: 'utils/gallary/image4.jpeg',
-    title: 'Deap Cleaning',
+    title: 'Deep Cleaning',
     info: `Deep cleaning involves using specialized tools and techniques to reach the nooks and
     crannies that are not usually reached during regular cleaning. Every individual spends
     about one-third of their life indoors, so deep cleaning your home is one of the best ways
@@ -148,7 +148,7 @@ services.forEach((item) => {
   `;
 });
 
-pricesList.innerHTML = elements;
+servicesList.innerHTML = elements;
 
 const showInfo = (e) => {
   const parentElement = e.closest('.price-item');
