@@ -136,7 +136,7 @@ const services = [
 let elements = '';
 services.forEach((item) => {
   elements += `
-  <div class="price-item">
+  <div class="service-item">
   <h4>${item.price}</h4>
   <div class="image-container">
     <img src="${item.imagePath}" alt="" />
@@ -151,7 +151,7 @@ services.forEach((item) => {
 servicesList.innerHTML = elements;
 
 const showInfo = (e) => {
-  const parentElement = e.closest('.price-item');
+  const parentElement = e.closest('.service-item');
   const infoElement = parentElement.lastElementChild;
   const heightValue = infoElement.style.height;
   if (heightValue === '0px'|| heightValue === '') {

@@ -421,14 +421,14 @@ select {
     gap: 2%;
 }
 
-.price-item {
+.service-item {
     width: 29vw;
     margin: 2rem 0;
     overflow: hidden;
     position: relative;
 }
 
-.price-item img {
+.service-item img {
     display: block;
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -440,19 +440,19 @@ select {
     overflow: hidden;
 }
 
-.price-item:hover img {
+.service-item:hover img {
     transform: scale(1.2);
 }
 
-.price-item h4,
-.price-item h3,
-.price-item span,
-.price-item p {
+.service-item h4,
+.service-item h3,
+.service-item span,
+.service-item p {
     position: absolute;
     z-index: 100;
 }
 
-.price-item h4 {
+.service-item h4 {
     background: #1484f4;
     color: white;
     padding: .5rem 1rem;
@@ -461,7 +461,7 @@ select {
     right: 2rem;
 }
 
-.price-item h3 {
+.service-item h3 {
     background-color: white;
     bottom: -.5rem;
     left: 50%;
@@ -472,7 +472,7 @@ select {
     cursor: pointer;
 }
 
-.price-item span {
+.service-item span {
     display: block;
     color: #1484f4;
     bottom: 0rem;
@@ -484,15 +484,15 @@ select {
     cursor: pointer;
 }
 
-.price-item:hover h3 {
+.service-item:hover h3 {
     padding-bottom: 2rem;
 }
 
-.price-item:hover span {
+.service-item:hover span {
     opacity: 1;
 }
 
-.price-item p {
+.service-item p {
     background: #f90;
     height: 0;
     width: 100%;
@@ -502,6 +502,9 @@ select {
     padding: 0 1rem;
     transition: all .3s;
     cursor: pointer;
+    width: auto;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
 }
 
 /* Media query for small screens */
@@ -550,11 +553,15 @@ select {
         flex-direction: column;
     }
 
-    .prices {
+    .services {
         flex-direction: column;
     }
 
-    .price-item {
+    .service-item {
         width: 100%;
+    }
+
+    .service-item p {
+        line-height: 1.3rem;
     }
 }
