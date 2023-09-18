@@ -55,6 +55,7 @@ const sendEmail = (event) => {
     From : "azfellas@gmail.com",
     Subject: serviceInput.value,
     Body: `
+      <p>Subject: ${serviceInput.value}</p>
       <p>Name: ${nameInput.value}</p>
       <p>Phone: ${phoneInput.value}</p>
       <p>Email: ${emailInput.value}</p>
@@ -75,38 +76,60 @@ const services = [
   {
     price: '$200-$1000',
     imagePath: 'utils/gallary/image1.jpeg',
-    title: 'image title here',
-    info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia',
+    title: 'Commercial Cleaning',
+    info: `Are you looking for quality regular cleaning services for your offices, retail stores,
+    restaurants, or any industrial facilities.?  Don’t look any further, A-Z Fellas cleaning
+    services has an experienced team of cleaners to provide high-quality services with
+    attention to detail and an unbeatable customer experience. We offer tailored packages
+    to suit your budget and requirements, ensuring that your workspace is always clean and tidy.`,
   },
   {
     price: '$200-$1000',
     imagePath: 'utils/gallary/image2.jpeg',
-    title: 'image title here',
-    info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia',
+    title: 'Doumistic cleaning',
+    info: `A-Z Fellas cleaning services has an experienced team of cleaners to provide high-quality
+    services for your residence and living spaces. We aim to maintain a clean and
+    comfortable environment for you and your family, covering tasks like house cleaning,
+    vacuuming, kitchen, and bathroom cleaning and all personalized to meet the specific
+    needs and preferences of individual households.`,
   },
   {
     price: '$200-$1000',
     imagePath: 'utils/gallary/image3.jpeg',
-    title: 'image title here',
-    info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia',
+    title: 'Move In/Out Cleaning',
+    info: `Moving into a new home is an exciting experience, but it can also be a stressful one.
+    From packing and unpacking to cleaning and organizing, there’s a lot to do before you
+    can settle in. We use techniques to get your home clean quickly and efficiently, leaving
+    you with one less thing to worry about.`,
   },
   {
     price: '$200-$1000',
     imagePath: 'utils/gallary/image4.jpeg',
-    title: 'image title here',
-    info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia',
+    title: 'Deap Cleaning',
+    info: `Deep cleaning involves using specialized tools and techniques to reach the nooks and
+    crannies that are not usually reached during regular cleaning. Every individual spends
+    about one-third of their life indoors, so deep cleaning your home is one of the best ways
+    to make sure that your family is breathing easy and staying safe in their home.`,
   },
   {
     price: '$200-$1000',
     imagePath: 'utils/gallary/image5.jpeg',
-    title: 'image title here',
-    info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia',
+    title: 'Mold removing',
+    info: `Our team of experienced professionals specializes in safely identifying the leads to the
+    mold and then isolating these affected areas, then move on to remove the mold clean
+    the disinfect the affected area and surrounding surfaces to prevent mold from
+    returning. Finally preventing these areas from mold by addressing the underlying
+    causes of mold growth.`,
   },
   {
     price: '$200-$1000',
     imagePath: 'utils/gallary/image5.jpeg',
-    title: 'image title here',
-    info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia',
+    title: 'Garden maintenance',
+    info: `Garden maintenance is essential to ensure that outdoor spaces remain beautiful and
+    functional throughout the year. Our team of expertise will take care and upkeep of your
+    garden or outdoor space to keep it healthy, attractive, and functional. We provide lawn
+    care, pruning &amp; trimming, weeding, planting and transplanting, seasonal clean-up,
+    design and renovation.`,
   },
 ];
 
